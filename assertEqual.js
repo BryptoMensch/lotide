@@ -16,12 +16,3 @@ const assertEqual = function (actual, expected) {
     console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
-const tail = function (list) {
-  let answer = list.splice(1);
-  return answer;
-};
-
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3);

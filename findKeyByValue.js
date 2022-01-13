@@ -12,16 +12,16 @@ const bestTVShowsByGenre = {
   drama: "The Wire",
 };
 
-function findKeyByValue(object, value) {
-  return Object.keys(object).find((key) => object[key] === value);
-}
+const findKeyByValue = function (obj1) {
+  const findKeyByValue = Object.keys(bestTVShowsByGenre);
+  for (let key of findKeyByValue) {
+    if (findKeyByValue === obj1[key]) {
+      console.log(key);
+      return true;
+    }
+  }
+  return undefined;
+};
 
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-
-// console.log(Object.keys(bestTVShowsByGenre));
-
-// scan the object and return the first key which contains the given value
-// no key with that given value is found, then it should return undefined.
-
-// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);

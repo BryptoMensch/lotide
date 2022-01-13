@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// Function
+// Function 
 // Input: string
 // Output: number of letters in string
 const countLetters = function (word) {

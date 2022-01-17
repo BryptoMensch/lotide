@@ -24,19 +24,19 @@
 // };
 
 const letterPositions = function (sentence) {
-  const results = {};
-  const letters = sentence.split("");
+	const results = {};
+	const letters = sentence.split("");
 
-  for (let item = 0; item < letters.length; item++) {
-    const letter = letters[item];
+	for (let item = 0; item < letters.length; item++) {
+		const letter = letters[item];
 
-    if (!results[letter]) {
-      results[letter] = [item];
-    } else {
-      results[letter].push(item);
-    }
-  }
-  return results;
+		if (!results[letter]) {
+			results[letter] = [item];
+		} else {
+			results[letter].push(item);
+		}
+	}
+	return results;
 };
 
-console.log(letterPositions("hello"));
+module.exports = letterPositions;

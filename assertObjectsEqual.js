@@ -5,7 +5,7 @@ const eqObjects = function (object1, object2) {
 };
 
 const assertObjectsEqual = function (actual, expected) {
-	const inspect = require(`util`).inspect;
+	const inspect = require("util").inspect;
 	if (actual !== expected) {
 		console.log(`Assertion Failed:  ${inspect(ab)} !== ${inspect(ba)}`);
 	} else {
@@ -15,4 +15,3 @@ const assertObjectsEqual = function (actual, expected) {
 
 const ab = { a: "8", b: "2" };
 const ba = { b: "6", a: "1" };
-console.log(assertObjectsEqual(eqObjects(ab, ba), false));

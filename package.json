@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@bryptomensch/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "First week of functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/BryptoMensch/lotide.git"
   },
-  "author": "",
+  "author": "Andrew Stanley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BryptoMensch/lotide/issues"
